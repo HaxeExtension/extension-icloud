@@ -1,0 +1,13 @@
+{
+  "name": "extension-icloud",
+  "url": "http://benjamindav.is",
+  "license": "MIT",
+  "tags": [],
+  "description": "Adds support for iCloud key-value storage",
+  "version": "1.0.0",
+  "releasenote": "",
+  "contributors": [""],
+  "dependencies": {
+
+  }
+}
