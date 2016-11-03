@@ -74,6 +74,15 @@ static value icloud_set_string_for_key(value key, value string)
 }
 DEFINE_PRIM(icloud_set_string_for_key, 2);
 
+static value icloud_delete_key(value key)
+{
+	#ifdef IPHONE
+	delete_key(val_string(key));
+	#endif
+	return alloc_null();
+}
+DEFINE_PRIM(icloud_delete_key, 1);
+
 static value icloud_set_notification_handle(value handle)
 {
 	#ifdef IPHONE

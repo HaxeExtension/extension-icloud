@@ -57,6 +57,13 @@ namespace icloud
 		[store setString:[NSString stringWithUTF8String:value] forKey:[NSString stringWithUTF8String:key]];
 	}
 
+	void delete_key(const char* key)
+	{
+		NSUbiquitousKeyValueStore *store = [NSUbiquitousKeyValueStore defaultStore];
+
+		[store removeObjectForKey:[NSString stringWithUTF8String:key]];
+	}
+
 	void initialize()
 	{
 		if (initialized == 1)

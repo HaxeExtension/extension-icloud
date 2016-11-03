@@ -64,6 +64,13 @@ class ICloud
 		#end
 	}
 
+	public static function delete(key:String)
+	{
+		#if ios
+		icloud_delete_key(key);
+		#end
+	}
+
 	static function initialize()
 	{
 		if (initialized)
@@ -99,6 +106,7 @@ class ICloud
 	private static var icloud_set_int_for_key = Lib.load("icloud", "icloud_set_int_for_key", 2);
 	private static var icloud_get_string_for_key = Lib.load("icloud", "icloud_get_string_for_key", 1);
 	private static var icloud_set_string_for_key = Lib.load("icloud", "icloud_set_string_for_key", 2);
+	private static var icloud_delete_key = Lib.load("icloud", "icloud_delete_key", 1);
 	private static var icloud_synchronize = Lib.load("icloud", "icloud_synchronize", 0);
 	private static var icloud_set_notification_handle = Lib.load("icloud", "icloud_set_notification_handle", 1);
 	#end

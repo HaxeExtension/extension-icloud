@@ -10,6 +10,7 @@ namespace icloud
 	void set_longlong_for_key(const char* key, long long value);
 	const char* get_string_for_key(const char* key);
 	void set_string_for_key(const char* key, const char* value);
+	void delete_key(const char* key);
 	void initialize();
 	void synchronize();
 
