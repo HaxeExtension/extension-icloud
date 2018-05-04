@@ -1,12 +1,12 @@
 {
   "name": "extension-icloud",
-  "url": "http://benjamindav.is",
+  "url": "https://github.com/raggy/extension-icloud",
   "license": "MIT",
-  "tags": [],
+  "tags": [ "extension", "ios" ],
   "description": "Adds support for iCloud key-value storage",
   "version": "1.0.0",
-  "releasenote": "",
-  "contributors": [""],
+  "releasenote": "Initial release",
+  "contributors": ["Benjamin Davis"],
   "dependencies": {
 
   }
