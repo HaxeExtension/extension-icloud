@@ -1,13 +1,10 @@
 {
   "name": "extension-icloud",
-  "url": "https://github.com/raggy/extension-icloud",
+  "url": "https://github.com/HaxeExtension/extension-icloud",
   "license": "MIT",
   "tags": [ "extension", "ios" ],
   "description": "Adds support for iCloud key-value storage",
   "version": "1.0.0",
   "releasenote": "Initial release",
-  "contributors": ["Benjamin Davis"],
-  "dependencies": {
-
-  }
+  "contributors": ["raggy"]
 }
